@@ -14,5 +14,12 @@ public class Test2 {
         String[] tokens = {"2", "1", "+", "3", "*"};
         int result = solution.evalRPN(tokens);
         System.out.println("Result: " + result);
+        System.out.println("-------------------------------------------------------");
+        StackToQueue stackToQueue=new StackToQueue();
+        stackToQueue.push(1);
+        stackToQueue.push(2);
+        stackToQueue.push(3);
+        stackToQueue.pop();
+        System.out.println(stackToQueue.peek());//2
     }
 }
